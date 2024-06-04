@@ -1,0 +1,95 @@
+@import url("./../../../common/style/webFont.css");
+@import url("./../../../common/style/reset.css");
+@import url("./../../../common/style/custom-basic.css");
+@import "./../../../common/style/frame--css.scss";
+
+$col-sapce : 24px;
+
+body{
+    line-height: 1.5;
+    .cover-1{
+        .inner{
+            background: linear-gradient(-45deg, #000748, #00477B);
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            overflow:hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .frame{
+                @include frame1-style("frame1-white-point.png", "frame1-white-ud-line.png", "frame1-white-lr-line.png")
+            }
+            .img-deco{
+                position: absolute;
+                top:-100px;
+                right: 50px;
+                animation: cover1-rotate360 120s infinite forwards linear;  
+                img{
+                    width: 620px;
+                }
+            }
+            .content{
+                position: relative;
+                transform: translateY(-20px);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 300;
+                flex-direction: column;
+                gap: $col-sapce;
+                color: #fff;
+                text-align: center;
+                .title{
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+                .line{
+                    width: 30px;
+                    height: 2px;
+                    background-color: #fff;
+                }
+                .item{
+                    h3{
+                        font-size: 1rem;
+                        font-weight: 400;
+                        padding-bottom: 1rem;
+                    }
+                    p{
+                        font-size: .875rem;
+                    }
+                }
+            }
+            .logo{
+                position: absolute;
+                bottom:0px;
+                top:50%;
+                transform: translateX(-50%);
+                background-color: red;
+                z-index: 10;
+                height: min-content;
+                img{
+                    width: 94px;
+
+                }
+            }
+
+        }
+    }
+}
+
+// 애니메이션
+@keyframes cover1-rotate360{
+    0%{
+        transform: rotate(0);
+        opacity: 1;
+    }
+    50%{
+        transform: rotate(180deg);
+        opacity: .5;
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,149 @@
+@import url("./../../../common/style/webFont.css");
+@import url("./../../../common/style/reset.css");
+@import url("./../../../common/style/custom-basic.css");
+body {
+  line-height: 1.5;
+}
+body .cover-1 .inner {
+  background: linear-gradient(-45deg, #000748, #00477B);
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .cover-1 .inner .frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+body .cover-1 .inner .frame .top::before, body .cover-1 .inner .frame .top::after, body .cover-1 .inner .frame .bottom::before, body .cover-1 .inner .frame .bottom::after, body .cover-1 .inner .frame .lr-line::before, body .cover-1 .inner .frame .lr-line::after, body .cover-1 .inner .frame .ud-line::before, body .cover-1 .inner .frame .ud-line::after {
+  content: "";
+  display: inline-block;
+  background-size: contain;
+  z-index: 10;
+  position: absolute;
+}
+body .cover-1 .inner .frame .top::before, body .cover-1 .inner .frame .top::after, body .cover-1 .inner .frame .bottom::before, body .cover-1 .inner .frame .bottom::after {
+  background-image: url("./../img/frame1-white-point.png");
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+}
+body .cover-1 .inner .frame .top::before {
+  top: 0;
+  left: 0;
+}
+body .cover-1 .inner .frame .top::after {
+  top: 0;
+  right: 0;
+  transform: scaleX(-1);
+}
+body .cover-1 .inner .frame .bottom::before {
+  bottom: 0;
+  left: 0;
+  transform: scaleY(-1);
+}
+body .cover-1 .inner .frame .bottom::after {
+  bottom: 0;
+  right: 0;
+  transform: rotate(-180deg);
+}
+body .cover-1 .inner .frame .ud-line::before, body .cover-1 .inner .frame .ud-line::after {
+  background-image: url("./../img/frame1-white-ud-line.png");
+  background-repeat: repeat;
+  height: 50px;
+  width: calc(100% - 100px);
+  left: 50px;
+}
+body .cover-1 .inner .frame .ud-line::before {
+  top: 0;
+}
+body .cover-1 .inner .frame .ud-line::after {
+  bottom: 0;
+  transform: rotate(-180deg);
+}
+body .cover-1 .inner .frame .lr-line::before, body .cover-1 .inner .frame .lr-line::after {
+  background-image: url("./../img/frame1-white-lr-line.png");
+  background-repeat: repeat;
+  height: calc(100% - 100px);
+  width: 50px;
+  top: 50px;
+}
+body .cover-1 .inner .frame .lr-line::before {
+  left: 0;
+}
+body .cover-1 .inner .frame .lr-line::after {
+  right: 0;
+  transform: rotate(-180deg);
+}
+body .cover-1 .inner .img-deco {
+  position: absolute;
+  top: -100px;
+  right: 50px;
+  animation: cover1-rotate360 120s infinite forwards linear;
+}
+body .cover-1 .inner .img-deco img {
+  width: 620px;
+}
+body .cover-1 .inner .content {
+  position: relative;
+  transform: translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 300;
+  flex-direction: column;
+  gap: 24px;
+  color: #fff;
+  text-align: center;
+}
+body .cover-1 .inner .content .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+body .cover-1 .inner .content .line {
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+}
+body .cover-1 .inner .content .item h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+body .cover-1 .inner .content .item p {
+  font-size: 0.875rem;
+}
+body .cover-1 .inner .logo {
+  position: absolute;
+  bottom: 0px;
+  top: 50%;
+  transform: translateX(-50%);
+  background-color: red;
+  z-index: 10;
+  height: -moz-min-content;
+  height: min-content;
+}
+body .cover-1 .inner .logo img {
+  width: 94px;
+}
+
+@keyframes cover1-rotate360 {
+  0% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(180deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=main.css.map */

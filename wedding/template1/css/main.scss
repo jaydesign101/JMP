@@ -1,5 +1,7 @@
 @import url("./../../../common/style/webFont.css");
 @import url("./../../../common/style/reset.css");
+@import url("./../../../common/style/custom-basic.css");
+
 
 $tc1 : #171717;
 $tc2 : #333333;
@@ -11,26 +13,6 @@ $lc2 : #eeeeee;
 $bc1 : #FAFAFA;
 $col-space : 24px;
 
-html{
-    font-size: 16px;
-    background-color: #fff;
-}
-
-.side-padding{
-    padding-left:1rem;
-    padding-right:1rem;
-}
-.inner{
-    @extend .side-padding;
-    width: 100%;
-    max-width: 480px;
-    min-width: 220px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    &.none{
-        padding: 0;
-    }
-}
 
 // 버튼 디자인
 div[class*=ic--]{
