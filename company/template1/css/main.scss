@@ -62,15 +62,13 @@ body{
             }
             .logo{
                 position: absolute;
-                bottom:0px;
-                top:50%;
+                bottom:30px;
+                left:50%;
                 transform: translateX(-50%);
-                background-color: red;
                 z-index: 10;
                 height: min-content;
                 img{
                     width: 94px;
-
                 }
             }
 

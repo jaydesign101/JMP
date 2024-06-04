@@ -121,10 +121,9 @@ body .cover-1 .inner .content .item p {
 }
 body .cover-1 .inner .logo {
   position: absolute;
-  bottom: 0px;
-  top: 50%;
+  bottom: 30px;
+  left: 50%;
   transform: translateX(-50%);
-  background-color: red;
   z-index: 10;
   height: -moz-min-content;
   height: min-content;
