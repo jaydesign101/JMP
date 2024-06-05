@@ -55,7 +55,7 @@ div[class*=ic--] img[src*=png] {
 }
 
 body {
-  font-family: "GowunBatang-Regular";
+  font-family: "GowunBatang";
   font-size: 1rem;
   line-height: 1.5;
   color: #171717;
@@ -255,38 +255,38 @@ body .call-1 .inner .parent .address > div .father .ic-group, body .call-1 .acco
   display: flex;
   gap: 1.125rem;
 }
-body .wedding-date-1 .inner, body .wedding-date-1 .account-modal-1 .modal, body .account-modal-1 .wedding-date-1 .modal {
+body .date-1 .inner, body .date-1 .account-modal-1 .modal, body .account-modal-1 .date-1 .modal {
   background-color: #F4FBFF;
   padding-top: 24px;
   padding-bottom: 24px;
 }
-body .wedding-date-1 .inner .title, body .wedding-date-1 .account-modal-1 .modal .title, body .account-modal-1 .wedding-date-1 .modal .title {
+body .date-1 .inner .title, body .date-1 .account-modal-1 .modal .title, body .account-modal-1 .date-1 .modal .title {
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body .wedding-date-1 .inner .title .title-text, body .wedding-date-1 .account-modal-1 .modal .title .title-text, body .account-modal-1 .wedding-date-1 .modal .title .title-text {
+body .date-1 .inner .title .title-text, body .date-1 .account-modal-1 .modal .title .title-text, body .account-modal-1 .date-1 .modal .title .title-text {
   letter-spacing: 0.125rem;
 }
-body .wedding-date-1 .inner .title #title-month, body .wedding-date-1 .account-modal-1 .modal .title #title-month, body .account-modal-1 .wedding-date-1 .modal .title #title-month {
+body .date-1 .inner .title #title-month, body .date-1 .account-modal-1 .modal .title #title-month, body .account-modal-1 .date-1 .modal .title #title-month {
   font-size: 1.5rem;
 }
-body .wedding-date-1 .inner #calendar, body .wedding-date-1 .account-modal-1 .modal #calendar, body .account-modal-1 .wedding-date-1 .modal #calendar {
+body .date-1 .inner #calendar, body .date-1 .account-modal-1 .modal #calendar, body .account-modal-1 .date-1 .modal #calendar {
   color: #4A718A;
 }
-body .wedding-date-1 .inner #calendar .week--group, body .wedding-date-1 .account-modal-1 .modal #calendar .week--group, body .account-modal-1 .wedding-date-1 .modal #calendar .week--group {
+body .date-1 .inner #calendar .week--group, body .date-1 .account-modal-1 .modal #calendar .week--group, body .account-modal-1 .date-1 .modal #calendar .week--group {
   border-top: #7398B0 solid 1px;
   border-bottom: #7398B0 solid 1px;
   margin-bottom: 0.5rem;
 }
-body .wedding-date-1 .inner #calendar div[class*="--group"], body .wedding-date-1 .account-modal-1 .modal #calendar div[class*="--group"], body .account-modal-1 .wedding-date-1 .modal #calendar div[class*="--group"] {
+body .date-1 .inner #calendar div[class*="--group"], body .date-1 .account-modal-1 .modal #calendar div[class*="--group"], body .account-modal-1 .date-1 .modal #calendar div[class*="--group"] {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   width: 100%;
   justify-items: center;
 }
-body .wedding-date-1 .inner #calendar div[class*="--group"] div[class*="--item"], body .wedding-date-1 .account-modal-1 .modal #calendar div[class*="--group"] div[class*="--item"], body .account-modal-1 .wedding-date-1 .modal #calendar div[class*="--group"] div[class*="--item"] {
+body .date-1 .inner #calendar div[class*="--group"] div[class*="--item"], body .date-1 .account-modal-1 .modal #calendar div[class*="--group"] div[class*="--item"], body .account-modal-1 .date-1 .modal #calendar div[class*="--group"] div[class*="--item"] {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
   width: -moz-min-content;
@@ -299,7 +299,7 @@ body .wedding-date-1 .inner #calendar div[class*="--group"] div[class*="--item"]
   justify-content: center;
   aspect-ratio: 1;
 }
-body .wedding-date-1 .inner #calendar div[class*="--group"] div[class*="--item"].focus, body .wedding-date-1 .account-modal-1 .modal #calendar div[class*="--group"] div[class*="--item"].focus, body .account-modal-1 .wedding-date-1 .modal #calendar div[class*="--group"] div[class*="--item"].focus {
+body .date-1 .inner #calendar div[class*="--group"] div[class*="--item"].focus, body .date-1 .account-modal-1 .modal #calendar div[class*="--group"] div[class*="--item"].focus, body .account-modal-1 .date-1 .modal #calendar div[class*="--group"] div[class*="--item"].focus {
   background-color: #4A718A;
   border-radius: 50%;
   font-weight: 700;

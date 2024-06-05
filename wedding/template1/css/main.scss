@@ -1,6 +1,6 @@
 @import url("./../../../common/style/webFont.css");
 @import url("./../../../common/style/reset.css");
-@import url("./../../../common/style/custom-basic.css");
+@import "./../../../common/style/custom-basic.scss";
 
 
 $tc1 : #171717;
@@ -50,7 +50,7 @@ div[class*=ic--]{
 }
 
 body{
-    font-family: 'GowunBatang-Regular';
+    font-family: 'GowunBatang';
     font-size: 1rem;
     line-height: 1.5;
     color: $tc1;
@@ -274,7 +274,7 @@ body{
         }
     }
     // 예식 날짜
-    .wedding-date-1{
+    .date-1{
         // background-color: $mc3;
         .inner{
             background-color: $mc3;

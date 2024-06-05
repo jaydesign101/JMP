@@ -4,8 +4,8 @@ html{
 }
 
 .side-padding{
-    padding-left:1rem;
-    padding-right:1rem;
+    padding-left:16px;
+    padding-right:16px;
 }
 .inner{
     @extend .side-padding;

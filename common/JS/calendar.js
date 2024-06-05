@@ -11,8 +11,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // 월 텍스트 넣기
-    const weddingMonthEl = document.getElementById('title-month');
-    weddingMonthEl.textContent = month+1 + "월";
+    if(document.getElementById('title-month')){
+        const weddingMonthEl = document.getElementById('title-month');
+        weddingMonthEl.textContent = month+1 + "월";
+    }
+    if(document.getElementById('title-date')){
+        const weddingMonthEl = document.getElementById('title-date');
+        weddingMonthEl.textContent = year +"." + (month+1) + "." + day;
+    }
+
 
     // 월과 요일 이름 배열
     const monthNames = ["January", "February", "March", "April", "May", "June",
