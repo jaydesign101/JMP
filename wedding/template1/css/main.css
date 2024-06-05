@@ -6,8 +6,8 @@ html {
 }
 
 .side-padding, body .account-1 .inner .account, body .account-1 .account-modal-1 .modal .account, body .account-modal-1 .account-1 .modal .account, .inner, body .account-modal-1 .modal {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .inner, body .account-modal-1 .modal {
@@ -364,8 +364,10 @@ body .account-1 .inner, body .account-1 .account-modal-1 .modal, body .account-m
   margin-top: -24px;
 }
 body .account-1 .inner .flower-img-con, body .account-1 .account-modal-1 .modal .flower-img-con, body .account-modal-1 .account-1 .modal .flower-img-con {
-  text-align: center;
   transform: translateY(40%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 body .account-1 .inner .flower-img-con img, body .account-1 .account-modal-1 .modal .flower-img-con img, body .account-modal-1 .account-1 .modal .flower-img-con img {
   width: 66px;
@@ -467,12 +469,14 @@ body .movie-1 video {
   margin-top: 10px;
   border-radius: 10px;
 }
-body .last-tell {
-  text-align: center;
+body .last-tell .inner, body .last-tell .account-modal-1 .modal, body .account-modal-1 .last-tell .modal {
   padding-top: 24px;
   padding-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-body .last-tell img {
+body .last-tell .inner img, body .last-tell .account-modal-1 .modal img, body .account-modal-1 .last-tell .modal img {
   width: 240px;
 }
 body .share .inner, body .share .account-modal-1 .modal, body .account-modal-1 .share .modal {

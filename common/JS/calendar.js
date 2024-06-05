@@ -1,5 +1,3 @@
-console.log("ddd")
-
 
 document.addEventListener('DOMContentLoaded', () => {
     const calendarEl = document.getElementById('calendar');
@@ -22,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // 월과 요일 이름 배열
-    const monthNames = ["January", "February", "March", "April", "May", "June",
-                        "July", "August", "September", "October", "November", "December"];
+    // const monthNames = ["January", "February", "March", "April", "May", "June",
+    //                     "July", "August", "September", "October", "November", "December"];
     // const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     const dayNames = ["일", "월", "화", "수", "목", "금", "토"];
 
@@ -59,7 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
         dayCell.className = 'day--item';
         dayCell.textContent = date;
         daysGrid.appendChild(dayCell);
-        console.log(date)
         if (date === day){
             dayCell.classList.add('focus')
         }

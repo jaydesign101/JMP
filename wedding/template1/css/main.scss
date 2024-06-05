@@ -399,8 +399,10 @@ body{
         .inner{
             margin-top: -24px;
             .flower-img-con{
-                text-align: center;
                 transform: translateY(40%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 img{
                     width: 66px;
                 }
@@ -516,11 +518,15 @@ body{
     }
     // last-tell
     .last-tell{
-        text-align: center;
-        padding-top: $col-space;
-        padding-bottom: $col-space;
-        img{
-            width: 240px;
+        .inner{
+            padding-top: $col-space;
+            padding-bottom: $col-space;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 240px;
+            }
         }
     }
     // share (공유)
